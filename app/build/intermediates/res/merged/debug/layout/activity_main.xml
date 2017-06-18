@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="${relativePackage}.${activityClass}" >
+   
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+             />
+
+<TextView
+    android:id="@+id/useridview"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/userid"
+    android:textColor="@color/white"
+    android:textSize="20dp"
+    android:visibility="gone" />
+<TextView
+    android:id="@+id/txtSpeechInput"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="test"
+    android:textColor="@color/white"
+    android:textSize="20dp"
+    android:visibility="gone" />
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textColor="@color/lbl_name"
+            android:textSize="24dp" />
+
+        <Button
+            android:id="@+id/writenote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WriteNote" />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13dp" />
+
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dip"
+            android:background="@color/btn_logut_bg"
+            android:text="@string/btn_logout"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+        
+        <ImageButton
+            android:id="@+id/btnSpeak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:src="@drawable/ico_mic" />
+    </LinearLayout>
+
+</RelativeLayout><!-- From: file:/Users/ALEX/AndroidStudioProjects/NOTE_v21/app/src/main/res/layout/activity_main.xml -->

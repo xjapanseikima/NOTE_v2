@@ -1,0 +1,30 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.note_v2.MainActivity" >
+
+   
+
+    
+   <item
+        android:id="@+id/revert_item"
+        android:showAsAction="always"
+        android:title="REVERT"
+        android:icon="@android:drawable/ic_menu_revert"
+        android:onClick="clickMenuItem"  />
+ 
+    <item
+        android:id="@+id/delete_item"
+        android:showAsAction="always"
+        android:title="DELETE"
+        android:icon="@android:drawable/ic_menu_delete"
+        android:onClick="clickMenuItem"  />
+    <item
+        android:id="@+id/ok_item"
+        android:showAsAction="always"
+        android:title="ok"
+        android:icon="@android:drawable/ic_menu_save"
+        android:onClick="clickMenuItem"  />
+    
+
+</menu>
+<!-- From: file:/Users/ALEX/AndroidStudioProjects/NOTE_v21/app/src/main/res/menu/main2.xml -->

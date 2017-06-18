@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.note_v2.MainActivity" >
+
+   
+    <item
+        android:id="@+id/add_item"
+        android:title="ADD"
+        android:icon="@android:drawable/ic_menu_add" 
+        android:showAsAction="always"
+        android:onClick="clickMenuItem" />
+    <item
+        android:id="@+id/search_item"
+        android:showAsAction="always"
+        android:title="SEARCH"
+        android:icon="@android:drawable/ic_menu_search"
+        android:onClick="clickMenuItem"  />
+        <item
+        android:id="@+id/select_color"
+        android:showAsAction="always"
+        android:title="COLOR"
+       android:icon="@android:drawable/ic_menu_gallery"
+        android:onClick="clickMenuItem"  />
+
+</menu>
+<!-- From: file:/Users/ALEX/AndroidStudioProjects/NOTE_v21/app/src/main/res/menu/main.xml -->

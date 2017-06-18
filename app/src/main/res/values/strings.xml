@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">NinoteCe</string>
+    <string name="edit_note">新增記事</string>  
+    <string name="action_settings">Settings</string>
+    <string name="title">Title</string>
+    <string name="body">Content</string>
+    <string name="enter_title">Enter title</string>
+    <string name="content">Content</string>
+    <string name="enter_content">please enter the content here</string>
+    <string name="title_activity_about">AboutActivity</string>
+    <string name="title_activity_item">ItemActivity</string>
+    <string name="title_activity_color">ColorActivity</string>
+    <string name="delete">Delete</string>
+    <string name="delete_item">確定要刪除 %1$d 個項目？</string>
+    <string name="confirm">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete_list">Delete</string>
+    <string name="title_record">語音備忘</string>
+    <string name="title_play">播放語音備忘</string>
+    <string name="record_play">播放</string>
+    <string name="record_new">重新錄製</string>
+    <string name="about">陳民鈞、曾俊瑜製作</string>
+  <string name="btnTakePicture">Capture Image</string>
+    <string name="btnRecordVideo">Record Video</string>
+    <string name="or">(or)</string>
+    <string name="btnUploadToServer">Upload to Server</string>
+    <string name="hint_account">Account</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_name">Fullname</string>
+    <string name="btn_login">LOGIN</string>
+    <string name="btn_register">REGISTER</string>
+    <string name="btn_link_to_register">Not a member? Sign up now.</string>
+    <string name="btn_link_to_login">Already registred! Login Me.</string>
+    <string name="welcome">Welcome</string>
+    <string name="btn_logout">LOGOUT</string>
+    <string name="name">Fullname</string>
+     <string name="userid">userid</string>
+    
+    
+
+</resources>

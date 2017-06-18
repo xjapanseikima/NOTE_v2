@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/useridlist"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+
+    <EditText
+        android:id="@+id/inputSearch"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="key your key words or date.."
+        android:inputType="text"
+        android:visibility="gone" />
+
+	<!-- Main ListView 
+		 Always give id value as list(@android:id/list)
+	-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/showdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="日期搜尋"
+            android:visibility="gone" />
+
+        <TextView
+    	android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content" 
+	    android:id="@+id/dateText"
+    />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/default_margin"
+        android:layout_weight="1"
+        android:background="@drawable/bule_retangle_drawable"
+        android:divider="@color/divider_color"
+        android:dividerHeight="1sp" >
+    </ListView>
+    
+    <TextView
+        android:id="@+id/show_app_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="@dimen/default_margin"
+        android:padding="@dimen/default_padding"
+        android:background="@drawable/retangle_drawable"
+        android:text="@string/app_name"
+        android:clickable="true"
+        android:onClick="aboutApp"/>
+
+    <TextView
+        android:id="@+id/userview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:text="userid"
+        android:visibility="gone"  >
+
+        <requestFocus />
+    </TextView>
+
+</LinearLayout>

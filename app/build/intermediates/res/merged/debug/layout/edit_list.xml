@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+<TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*">
+<TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*">
+
+        <TableRow>
+
+            <ImageButton
+                android:id="@+id/set_alarm"
+                android:src="@drawable/alarm_icon"
+                android:onClick="clickFunction" 
+                android:visibility="gone"/>
+
+            <ImageButton
+                android:id="@+id/select_color"
+                android:src="@drawable/select_color_icon"
+                android:onClick="clickFunction" 
+                android:visibility="gone"/>
+            
+        </TableRow>
+        
+    </TableLayout>
+    <TableRow>
+
+       <TextView
+           android:layout_margin="2sp"
+           android:background="@drawable/purple_retangle_drawable"
+           android:padding="6sp"
+           android:text="@string/title"
+           android:textAppearance="?android:attr/textAppearanceMedium" />
+
+       <EditText
+           android:id="@+id/title_text"
+           android:layout_margin="2sp"
+           android:background="@drawable/yellow_retangle_drawable"
+           android:ems="10"
+           android:hint="@string/enter_title"
+           android:padding="6sp"
+           android:textAppearance="?android:attr/textAppearanceMedium" >
+
+           <requestFocus />
+       </EditText>
+
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_height="200sp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="2sp"
+            android:background="@drawable/purple_retangle_drawable"
+            android:padding="6sp"
+            android:text="@string/content"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/content_text"
+                android:layout_height="200sp"
+                android:layout_margin="2sp"
+                android:background="@drawable/yellow_retangle_drawable"
+                android:gravity="top|left"
+                android:hint="@string/enter_content"
+                android:padding="6sp"
+                android:textAppearance="?android:attr/textAppearanceMediumInverse" />
+
+    </TableRow>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*">
+
+        <TableRow>
+
+            <ImageButton
+                android:id="@+id/take_picture"
+                android:background="@drawable/circle_drawable"
+                android:onClick="clickFunction"
+                android:src="@drawable/take_picture_icon" />
+
+            <ImageButton
+                android:id="@+id/record_sound"
+                android:background="@drawable/circle_drawable"
+                android:onClick="clickFunction"
+                android:src="@drawable/record_sound_icon" />
+
+            <ImageButton
+                android:id="@+id/set_location"
+                android:background="@drawable/circle_drawable"
+                android:onClick="clickFunction"
+                android:src="@drawable/location_icon" />
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*">
+  <ImageView
+            android:id="@+id/edit_picture"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           
+            android:padding="6sp"
+            android:layout_margin="2sp"
+            android:visibility="visible" />
+  <TextView
+        android:id="@+id/txtPercentage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/txt_font"
+        android:textSize="30dp" />
+  
+  <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:layout_marginBottom="35dp" 
+        android:visibility="gone"/>
+  
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/btnnotedelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/delete" 
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/btback"
+                android:layout_margin="2sp"
+                android:onClick="onSubmit"
+                android:padding="6sp"
+                android:text="@string/cancel"
+                android:textAppearance="?android:attr/textAppearanceMedium" 
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/btnconfirm"
+                android:layout_margin="2sp"
+                android:onClick="onSubmit"
+                android:padding="6sp"
+                android:text="@string/confirm"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:visibility="gone" />
+
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/update_date"
+        android:layout_margin="10sp"
+        android:padding="6sp"
+        android:text="Date" />
+
+</TableLayout>
+
+
+</ScrollView><!-- From: file:/Users/ALEX/AndroidStudioProjects/NOTE_v21/app/src/main/res/layout/edit_list.xml -->
