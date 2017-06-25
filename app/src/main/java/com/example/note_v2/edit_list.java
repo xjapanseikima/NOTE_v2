@@ -62,7 +62,6 @@ public class edit_list extends Activity {
 	Button	btnback;
     TextView update_view;
 	String noteid;
-	EditText txtTEST;
     static String  PictureFilename;
 	// Progress Dialog
 	private ProgressDialog pDialog;
@@ -80,13 +79,13 @@ public class edit_list extends Activity {
 	public static final int MEDIA_TYPE_IMAGE = 1;
 	private static final String TAG = edit_list.class.getSimpleName();
 	// single product url
-	private static final String url_note_detials = "http://120.110.112.154/thenote/note_details.php";
+	private static final String url_note_detials = "http://61.220.27.214/thenote/note_details.php";
 
 	// url to update product
-	private static final String url_update_note = "http://120.110.112.154/thenote/update_note.php";
+	private static final String url_update_note = "http://61.220.27.214/thenote/update_note.php";
 	
 	// url to delete product
-	private static final String url_delete_note = "http://120.110.112.154/thenote/delete_note.php";
+	private static final String url_delete_note = "http://61.220.27.214/thenote/delete_note.php";
 
 	// JSON Node names
 	private static final String TAG_SUCCESS = "success";
@@ -215,10 +214,10 @@ public class edit_list extends Activity {
 	        }
 	        }
 	 public void clickMenuItem(MenuItem item) {
-	        // ¨Ï¥Î°Ñ¼Æ¨ú±o¨Ï¥ÎªÌ¿ï¾Üªº¿ï³æ¶µ¥Ø¤¸¥ó½s¸¹
+	        // ï¿½Ï¥Î°Ñ¼Æ¨ï¿½ï¿½oï¿½Ï¥ÎªÌ¿ï¿½Üªï¿½ï¿½ï¿½æ¶µï¿½Ø¤ï¿½ï¿½ï¿½sï¿½ï¿½
 	        int itemId = item.getItemId();
 	 
-	        // §PÂ_¸Ó°õ¦æ¤°»ò¤u§@¡A¥Ø«eÁÙ¨S¦³¥[¤J»Ý­n°õ¦æªº¤u§@
+	        // ï¿½Pï¿½_ï¿½Ó°ï¿½ï¿½æ¤°ï¿½ï¿½uï¿½@ï¿½Aï¿½Ø«eï¿½Ù¨Sï¿½ï¿½ï¿½[ï¿½Jï¿½Ý­nï¿½ï¿½ï¿½æªºï¿½uï¿½@
 	        switch (itemId) {
 	        
 
@@ -317,7 +316,7 @@ public class edit_list extends Activity {
 	        if (type == MEDIA_TYPE_IMAGE) {
 	            mediaFile = new File(mediaStorageDir.getPath() + File.separator
 	                    + "IMG_" + timeStamp + ".jpg");
-	           mediaFileName = "IMG_" + timeStamp + ".jpg";//¹Ï¤ù¦WºÙ
+	           mediaFileName = "IMG_" + timeStamp + ".jpg";//ï¿½Ï¤ï¿½ï¿½Wï¿½ï¿½
 	        } else {
 	            return null;
 	        }
@@ -411,7 +410,7 @@ public class edit_list extends Activity {
 					        .execute( MY_PIC_URL);
 					        }
 							if(product.getString(TAG_DATE_UPDATED)=="null")
-							{update_view .setText("§A©|µL·s­×§ï®É¶¡");}
+							{update_view .setText("ï¿½Aï¿½|ï¿½Lï¿½sï¿½×§ï¿½É¶ï¿½");}
 							else{
 							update_view .setText(product.getString(TAG_DATE_UPDATED));
 							}
@@ -445,6 +444,8 @@ public class edit_list extends Activity {
 		/**
 		 * Before starting background thread Show Progress Dialog
 		 * */
+		String title;
+		String content;
 		@Override
 		protected void onPreExecute() {
 			super.onPreExecute();
@@ -453,6 +454,8 @@ public class edit_list extends Activity {
 			pDialog.setIndeterminate(false);
 			pDialog.setCancelable(true);
 			pDialog.show();
+			txttitle.getText().toString();
+			content = txtcontent.getText().toString();
 		}
 
 		/**
@@ -461,8 +464,7 @@ public class edit_list extends Activity {
 		protected String doInBackground(String... args) {
 
 			// getting updated data from EditTexts
-			String title = txttitle.getText().toString();
-			String content = txtcontent.getText().toString();
+
 			String picUrl=mediaFileName;
 			// Building Parameters
 			List<NameValuePair> params = new ArrayList<NameValuePair>();
@@ -705,6 +707,8 @@ public class edit_list extends Activity {
 		/**
 		 * Before starting background thread Show Progress Dialog
 		 * */
+		String title;
+		String content;
 		@Override
 		protected void onPreExecute() {
 			super.onPreExecute();
@@ -713,6 +717,8 @@ public class edit_list extends Activity {
 			pDialog.setIndeterminate(false);
 			pDialog.setCancelable(true);
 			pDialog.show();
+			 title = txttitle.getText().toString();
+			content = txtcontent.getText().toString();
 		}
 	
 		/**
@@ -721,8 +727,7 @@ public class edit_list extends Activity {
 		protected String doInBackground(String... args) {
 	
 			// getting updated data from EditTexts
-			String title = txttitle.getText().toString();
-			String content = txtcontent.getText().toString();
+
 			String picname= UserInfo.picname;
 			// Building Parameters
 			List<NameValuePair> params = new ArrayList<NameValuePair>();

@@ -23,6 +23,7 @@ import org.json.JSONObject;
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.nfc.Tag;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
@@ -192,14 +193,14 @@ public class LoginActivity extends Activity {
 	}
 	public void deliverToNextActitity(){
 		        
-		        Bundle bundle = new Bundle();//«Ø¥ß¤@­Óbundleª«¥ó¡A¨Ã±N­n¶Ç»¼ªº°Ñ¼Æ©ñ¨ìbundle¸Ì
+		        Bundle bundle = new Bundle();//ï¿½Ø¥ß¤@ï¿½ï¿½bundleï¿½ï¿½ï¿½ï¿½Aï¿½Ã±Nï¿½nï¿½Ç»ï¿½ï¿½ï¿½ï¿½Ñ¼Æ©ï¿½ï¿½bundleï¿½ï¿½
 		      //  bundle.putString("userid", nameEdit.getText().toString());
 		       bundle.putString("email", inputEmail.getText().toString());
 		        Intent intent = new Intent();
-		        //³]©w¤U¤@­ÓActitity
+		        //ï¿½]ï¿½wï¿½Uï¿½@ï¿½ï¿½Actitity
 		        intent.setClass(this, EnterActivity.class);
 		        intent.putExtras(bundle);
-		        //¶}±ÒActivity
+		        //ï¿½}ï¿½ï¿½Activity
 	        startActivity(intent);
 		   }
 	

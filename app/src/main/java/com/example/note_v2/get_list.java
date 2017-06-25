@@ -63,9 +63,9 @@ public class get_list extends ListActivity {
 	ArrayList<HashMap<String, String>> notesList;
 
 	// url to get all products list
-	private String url_all_note = "http://120.110.112.154/thenote/get_user_note.php";
-	private String url_change_color = "http://120.110.112.154/thenote/change_color.php";
-	private static final String url_note_color = "http://120.110.112.154/thenote/url_note_color.php";
+	private String url_all_note = "http://61.220.27.214/thenote/get_user_note.php";
+	private String url_change_color = "http://61.220.27.214/thenote/change_color.php";
+	private static final String url_note_color = "http://61.220.27.214/thenote/url_note_color.php";
 	// JSON Node names
 	private static final String TAG_SUCCESS = "success";
 	private static final String TAG_NOTE = "note";
@@ -130,7 +130,7 @@ public class get_list extends ListActivity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.notes_list);
 		
-		//日期設定
+		//嚙踝蕭嚙踝蕭]嚙緩
 		  calendar = Calendar.getInstance();
 	        mYear = calendar.get(Calendar.YEAR);
 	        mMonth = calendar.get(Calendar.MONTH);
@@ -150,8 +150,8 @@ public class get_list extends ListActivity {
 	
 		Bundle bundle = getIntent().getExtras(); 
 	     textviewId = (TextView)findViewById(R.id.userview);  
-	  //   UserInfo.userid=bundle.getString("userids");//把USERID 寫進USERINFO
-	     textviewId.setText(UserInfo.userid);//接收前面上一個Activity的參數
+	  //   UserInfo.userid=bundle.getString("userids");//嚙踝蕭USERID 嚙篇嚙箠USERINFO
+	     textviewId.setText(UserInfo.userid);//嚙踝蕭嚙踝蕭嚙箴嚙踝蕭嚙磕嚙瑾嚙踝蕭Activity嚙踝蕭嚙諸潘蕭
 	   inputSearch=(EditText)findViewById(R.id.inputSearch);
 		// Hashmap for ListView
 
@@ -198,6 +198,11 @@ public class get_list extends ListActivity {
 			}
 		});
 		}
+	@Override
+	protected void onDestroy() {
+		pDialog.dismiss();
+		super.onDestroy();
+	}
 	//showdate
 		@Override
 		 protected Dialog onCreateDialog(int id) {
@@ -247,11 +252,13 @@ public class get_list extends ListActivity {
 	
         return true;
     }
+	@SuppressWarnings("ResourceType")/*inputSearch.setVisibility(0);
+			showdate.setVisibility(0);*/
 	public void clickMenuItem(MenuItem item) {
-        // 使用參數取得使用者選擇的選單項目元件編號
+        // 嚙誕用參數剁蕭嚙緻嚙誕用者選蕭靰嚙踝蕭嚙賣項嚙諍歹蕭嚙踝蕭s嚙踝蕭
         int itemId = item.getItemId();
  
-        // 判斷該執行什麼工作，目前還沒有加入需要執行的工作
+        // 嚙瞑嚙稻嚙諉堆蕭嚙賣什嚙踝蕭u嚙瑾嚙璀嚙諍前嚙誶沒嚙踝蕭嚙稼嚙皚嚙豎要嚙踝蕭嚙賣的嚙線嚙瑾
         switch (itemId) {
         case R.id.select_color:
         	showColorPickerDialogDemo();
@@ -268,6 +275,7 @@ public class get_list extends ListActivity {
         case R.id.delete_item:
         	break;
         case R.id.search_item:
+
         	inputSearch.setVisibility(0);
         	showdate.setVisibility(0);
         	

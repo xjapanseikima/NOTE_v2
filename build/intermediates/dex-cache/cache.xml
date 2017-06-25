@@ -2,32 +2,11 @@
 <items version="2" >
 
     <item
-        jar="/Users/ALEX/AndroidStudioProjects/NOTE_v21/app/libs/httpclient-4.3.6.jar"
+        jar="/Users/ALEX/AndroidStudioProjects/NOTE_v21/app/libs/httpmime-4.3.6.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="f3cf3b25e14d3bca47773e95aa85ea8fefbf8e81">
-        <dex dex="/Users/ALEX/AndroidStudioProjects/NOTE_v21/app/build/intermediates/pre-dexed/debug/httpclient-4.3.6-23866169b5fbc8e511ed4e98baad6f920994acbe.jar" />
-    </item>
-    <item
-        jar="/Users/ALEX/AndroidStudioProjects/NOTE_v21/app/libs/volley.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="d4aaa36e04ee71a83444f8367c97a46fda662d2c">
-        <dex dex="/Users/ALEX/AndroidStudioProjects/NOTE_v21/app/build/intermediates/pre-dexed/debug/volley-ade13f4744f04bf4f4680e94e3575eeba9e1ab8e.jar" />
-    </item>
-    <item
-        jar="/Users/ALEX/AndroidStudioProjects/NOTE_v21/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/jars/classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
-        <dex dex="/Users/ALEX/AndroidStudioProjects/NOTE_v21/app/build/intermediates/pre-dexed/debug/classes-84923e6b80565ef9ce83b785fde0798cf87cb5f7.jar" />
-    </item>
-    <item
-        jar="/Users/ALEX/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/21.0.3/support-annotations-21.0.3.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
-        <dex dex="/Users/ALEX/AndroidStudioProjects/NOTE_v21/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-b3bc2c90b9b5aa28071ae10955229bdacd5801c7.jar" />
+        sha1="66a39a5e37d5da40fdad6176fc24ef4316e74702">
+        <dex dex="/Users/ALEX/AndroidStudioProjects/NOTE_v21/app/build/intermediates/pre-dexed/debug/httpmime-4.3.6-019da94a9d816053ab95ce6525cb1f432317758d.jar" />
     </item>
     <item
         jar="/Users/ALEX/AndroidStudioProjects/NOTE_v21/app/libs/httpcore-4.3.3.jar"
@@ -37,18 +16,39 @@
         <dex dex="/Users/ALEX/AndroidStudioProjects/NOTE_v21/app/build/intermediates/pre-dexed/debug/httpcore-4.3.3-bf6f0a64515556094b96b50476cd8eea8468067b.jar" />
     </item>
     <item
-        jar="/Users/ALEX/AndroidStudioProjects/NOTE_v21/app/libs/httpmime-4.3.6.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="66a39a5e37d5da40fdad6176fc24ef4316e74702">
-        <dex dex="/Users/ALEX/AndroidStudioProjects/NOTE_v21/app/build/intermediates/pre-dexed/debug/httpmime-4.3.6-019da94a9d816053ab95ce6525cb1f432317758d.jar" />
-    </item>
-    <item
         jar="/Users/ALEX/AndroidStudioProjects/NOTE_v21/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/jars/libs/internal_impl-21.0.3.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
         <dex dex="/Users/ALEX/AndroidStudioProjects/NOTE_v21/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-59119b6d9c33ca846def91334097af3f893be581.jar" />
+    </item>
+    <item
+        jar="/Users/ALEX/AndroidStudioProjects/NOTE_v21/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="/Users/ALEX/AndroidStudioProjects/NOTE_v21/app/build/intermediates/pre-dexed/debug/classes-84923e6b80565ef9ce83b785fde0798cf87cb5f7.jar" />
+    </item>
+    <item
+        jar="/Users/ALEX/AndroidStudioProjects/NOTE_v21/app/libs/httpclient-4.3.6.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="f3cf3b25e14d3bca47773e95aa85ea8fefbf8e81">
+        <dex dex="/Users/ALEX/AndroidStudioProjects/NOTE_v21/app/build/intermediates/pre-dexed/debug/httpclient-4.3.6-23866169b5fbc8e511ed4e98baad6f920994acbe.jar" />
+    </item>
+    <item
+        jar="/Users/ALEX/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/21.0.3/support-annotations-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
+        <dex dex="/Users/ALEX/AndroidStudioProjects/NOTE_v21/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-b3bc2c90b9b5aa28071ae10955229bdacd5801c7.jar" />
+    </item>
+    <item
+        jar="/Users/ALEX/AndroidStudioProjects/NOTE_v21/app/libs/volley.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="d4aaa36e04ee71a83444f8367c97a46fda662d2c">
+        <dex dex="/Users/ALEX/AndroidStudioProjects/NOTE_v21/app/build/intermediates/pre-dexed/debug/volley-ade13f4744f04bf4f4680e94e3575eeba9e1ab8e.jar" />
     </item>
 
 </items>
